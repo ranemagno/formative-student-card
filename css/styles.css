@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav START */
+.nav {
+  width: 100%;
+  height: 7vh;
+  background-color: #fafafa;
+  position: fixed;
+}
+.fa-bars {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 25px;
+  left: 25px;
+}
+.fa-search{
+  position: absolute;
+  font-size: 1.5rem;
+  top: 25px;
+  right: 25px;
+}
+#yoobeeLogo {
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+/* nav END */
+
+/* all content container */
+.container {
+  display: flex;
+  height: 93vh;
+  background-color: rgb(162, 234, 255);
+  flex-wrap: wrap;
+  padding-top: 7vh;
+}
+
+/* container left and right */
+.map,
+.promos {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(95, 150, 207);
+}
+
+/* map section START */
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+.select-campus-btn {
+  width: 300px;
+  height: 80px;
+  /* background-color: rgb(215, 215, 215); */
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+}
+.campuses {
+  display: none;
+}
+h1 {
+  float: left;
+}
+.fa-angle-down {
+  margin: 1.2rem 1rem 0 0;
+  font-size: 2.5rem;
+  float: right;
+}
+.campus-list {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+/* map section END */
+
+
+/* promos START */
+.promos {
+  background-color: rgb(121, 61, 173);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-promo {
+  margin: 25px 20px 0 20px;
+}
+.small-cards {
+  margin: 10px 10px 0 5px;
+}
+.main-promo {
+  background-color: rgb(209, 93, 90);
+  height: 30%;
+  width: 100%;
+}
+.small-cards {
+  /* flex-grow: 1; */
+  height: 250px;
+  width: 250px;
+  background-color: rgb(163, 74, 71);
+  /* border: 2px solid #333; */
+}
+/* promos END */
+
+/* large screen viewport */
+@media only screen and (min-width: 1300px) {
+  .small-cards {
+    flex-grow: 1;
+    height: 290px;
+    width: 290px;
+    margin: 0 2% 0 2%;
+  }
+}
+
+/* mobile/table viewport */
+@media only screen and (max-width: 700px) {
+  .map {
+    height: 50vh;
+  }
+  .map,
+  .promos {
+    width: 750px;
+  }
+  .promos {
+    height: 155vh;
+  }
+  .small-cards {
+    width: 92%;
+    margin-left: 10px;
+  }
+}

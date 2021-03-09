@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Yoobee Card</title>
@@ -12,7 +15,8 @@
     <div class="nav">
       <i class="fa fa-bars" aria-hidden="true"></i>
       <div class="logo">
-        <img src="css/images/yoobeeLogo.png" alt="Yoobee Logo" id="yoobeeLogo">
+        <!-- <img src="css/images/yoobeeLogo.png" alt="Yoobee Logo" id="yoobeeLogo"> -->
+        <h1 id="yoobeeLogo">YooCard</h1>
       </div>
       <i class="fa fa-search" aria-hidden="true"></i>
     </div>
@@ -20,25 +24,30 @@
 
     <!-- container START -->
     <div class="container">
-      <div class="map">
+      <div class="map-section">
+        <iframe id="currentMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.367951781211!2d174.77757431600963!3d-41.27909577927435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afdacd02e46d%3A0x41a5eb0416607a6d!2sYoobee%20Colleges%20-%20Wellington%20Campus!5e0!3m2!1sen!2snz!4v1615330808235!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="select-campus-section">
 
-        <div class="select-campus-btn">
-          <div>
-            <h1>Wellington</h1>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <div class="select-campus-btn" id="selectCampusBtn">
+            <div>
+              <h1 id="selectedCampus">Wellington</h1>
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </div>
           </div>
-        </div>
-        <div class="campus-list">
-          <ul>
-            <li>Rotorua</li>
-            <li>Christchurch</li>
-            <li>Wellington</li>
-            <li>Auckland</li>
-          </ul>
-        </div>
 
+          <div class="campus-list">
+            <ul>
+              <li id="auckland">Auckland</li>
+              <li id="christchurch">Christchurch</li>
+              <li id="rotorua">Rotorua</li>
+              <li id="wellington">Wellington</li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- select campus section END -->
       </div>
-
+      <!-- map END -->
       <!-- promo START -->
       <div class="promos">
         <div class="main-promo"></div>
@@ -52,6 +61,7 @@
     <!-- container END -->
 
     <!-- do i even need this -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

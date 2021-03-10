@@ -17,14 +17,14 @@ A website that gives Yoobee Students access to the discounts that their YooCard 
 
 ### Key Features
 - Responsive layout, using flexbox
-- Interactive elements such as buttons, navigation and animation
+- Interactive elements such as buttons and animation using Jquery
 - Visually appealing images and css styling
 
 
 
 ### :exclamation: LINKS YOU MUST HAVE :exclamation:
 
-Css file, Google Fonts, Font Awesome v4
+###### Css file, Google Fonts, Font Awesome v4
 \
 Found in the \<head\>
 ```html
@@ -34,7 +34,7 @@ Found in the \<head\>
 <link rel="stylesheet" href="css/styles.css">
 ```
 
-Jquery, Javascript file
+###### Jquery, Javascript file
 \
 Found in the \<body\> right at the bottom
 ``` javascript

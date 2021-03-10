@@ -25,7 +25,6 @@ A website that gives Yoobee Students access to the discounts that their YooCard 
 ### :exclamation: LINKS YOU MUST HAVE :exclamation:
 
 ###### Css file, Google Fonts, Font Awesome v4
-\
 Found in the \<head\>
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -35,7 +34,6 @@ Found in the \<head\>
 ```
 
 ###### Jquery, Javascript file
-\
 Found in the \<body\> right at the bottom
 ``` javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

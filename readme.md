@@ -11,7 +11,7 @@ I have developed the website based of the final prototype of the design team. :c
 
 
 ### What is this?
-A website that gives Yoobee Students access to the discounts that their YooCard provides. _YooCard is a fictional product._
+A website that gives Yoobee Students access to the discounts that their YooCard provides. _YooCard is a fictional product. Perhaps one day it will be real..._
 
 
 
@@ -25,7 +25,8 @@ A website that gives Yoobee Students access to the discounts that their YooCard 
 ### :exclamation: LINKS YOU MUST HAVE :exclamation:
 
 Css file, Google Fonts, Font Awesome v4
-In the <head>...</head>
+\
+Found in the \<head\>
 ```html
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -34,7 +35,8 @@ In the <head>...</head>
 ```
 
 Jquery, Javascript file
-In the <body> right at the bottom
+\
+Found in the \<body\> right at the bottom
 ``` javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/scripts.js"></script>

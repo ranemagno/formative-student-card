@@ -1,44 +1,43 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #1b1b1b;
 }
-.nav,
-.map-section,
-.promos {
-  background-color: rgb(33, 39, 65);
-}
+
 
 /* nav START */
 .nav {
   width: 100%;
-  height: 8vh;
+  height: 11vh;
   position: fixed;
   color: #fafafa;
+  top: 0;
+  font-size: 1rem;
+  z-index: 99;
+  background-color: #1b1b1b;
 }
 .fa-bars {
   position: absolute;
-  font-size: 1.5rem;
-  top: 30px;
+  top: 25px;
   left: 25px;
 }
 .fa-search{
   position: absolute;
-  font-size: 1.5rem;
-  top: 30px;
+  top: 25px;
   right: 25px;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 #yoobeeLogo {
   color: white;
   text-align: center;
-  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  letter-spacing: .2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  position: fixed;
+  top: 3px;
+  left: 35px
 }
 /* nav END                  ---------------------------------*/
 
@@ -68,29 +67,44 @@ body {
 .campus-list:hover {
   cursor: pointer;
 }
+#currentMap {
+  margin-top: 1%;
+  height: 92%;
+  width: 95%;
+}
 .select-campus-section {
   width: 300px;
   height: 0;
   position: absolute;
-  background-color: rgb(246, 66, 198)
 }
 .select-campus-btn {
+  opacity: 0.3;
   width: 100%;
-  height: 80px;
-  background-color: rgb(215, 215, 215);
+  height: 55px;
+  font-size: .7rem;
+  color: #fafafa;
+  background-color: #1b1b1b;
   padding-bottom: 5px;
-  border-bottom: 2px solid #333;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+#selectedCampus {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.select-campus-btn:hover {
+  opacity: 1;
 }
 h1 {
   float: left;
+  margin-left: 10%;
 }
 .fa-angle-down {
-  margin: 1.2rem 1rem 0 0;
-  font-size: 2.5rem;
+  margin: 4% 7% 0 0;
+  font-size: 2rem;
   float: right;
 }
 .campus-list {
-  /* background-color: rgb(165, 231, 150); */
   height: 200px;
   width: 100%;
   display: none;
@@ -99,12 +113,16 @@ ul {
   text-align: center;
   padding: 0;
   margin: 0;
+
 }
 li {
   list-style: none;
-  border-bottom: 2px solid #333;
-  font-size: 2rem;
+  border-bottom: 1px solid #fafafa;
   padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem;
+  background-color: #1b1b1b;
+  color: #fafafa;
 }
 
 /* map section END               ------------------------------*/
@@ -114,16 +132,19 @@ li {
 .promos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .main-promo,
 .small-cards {
-  background-color: #fafafa;
+  background-color: rgb(82, 82, 82);
   border-radius: 5px;
-  box-shadow: 3px 3px 10px rgb(27, 30, 50), -3px -3px 10px rgb(115, 127, 193);
+  /* box-shadow: 3px 3px 10px rgb(27, 30, 50), -3px -3px 10px rgb(115, 127, 193); */
+}
+.small-cards:hover {
+  background-color: rgb(87, 59, 128);
 }
 .main-promo {
-  margin: 25px 20px 0 20px;
+  flex-grow: 1;
+  margin: 25px 2.5% 0 2.5%;
   height: 30%;
   width: 100%;
   background-image: url('https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
@@ -132,36 +153,42 @@ li {
   background-repeat: no-repeat;
 }
 .small-cards {
-  margin: 10px 10px 0 5px;
-  height: 250px;
-  width: 250px;
+  flex-grow: 1;
+  margin: 10px 2.5% 0 2.5%;
+  height: 27%;
+  width: 44.8%;
 }
 /* promos END */
 
 /* large screen viewport */
-@media only screen and (min-width: 1300px) {
+/* @media only screen and (min-width: 1300px) {
   .small-cards {
     flex-grow: 1;
     height: 290px;
     width: 290px;
     margin: 0 2% 0 2%;
   }
-}
+} */
 
-/* mobile/table viewport */
-@media only screen and (max-width: 800px) {
-  .map-section {
-    height: 50vh;
+@media only screen  and (max-width: 600px){
+
+  .nav {
+    height: 12vh;
   }
   .map-section,
   .promos {
-    width: 750px;
+    width: 100vw;
   }
-  .promos {
-    height: 155vh;
+  .map-section {
+    padding-top: 1%;
+  }
+  .main-promo {
+    height: 40%;
+    margin-top: 0;
+    height: 30%;
   }
   .small-cards {
-    width: 92.5%;
-    margin-left: 10px;
+    width:  50%;
+    height: 27%;
   }
 }

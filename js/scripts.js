@@ -1,13 +1,13 @@
 // toggles campus list
-$('#selectCampusBtn').click(function(e){
+$('#selectCampusBtn').click(function(){
   $('.campus-list').toggle();
-  // console.log(e)
-  // e = event
-
 });
 
 // changes main text
 $('.campus-list li').click(function(e){
+  // console.log(e)
+  // e = event
+
   // console.log(event.target.innerText);
   $('#selectedCampus').text(e.target.innerText);
   $('.campus-list').toggle();

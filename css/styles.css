@@ -50,7 +50,7 @@ body {
   padding-top: 7vh;
 }
 
-/* container left and right --------------------------------*/
+/* container left and right */
 .map-section,
 .promos {
   width: 50%;
@@ -124,7 +124,6 @@ li {
   background-color: #1b1b1b;
   color: #fafafa;
 }
-
 /* map section END               ------------------------------*/
 
 
@@ -137,7 +136,6 @@ li {
 .small-cards {
   background-color: rgb(82, 82, 82);
   border-radius: 5px;
-  /* box-shadow: 3px 3px 10px rgb(27, 30, 50), -3px -3px 10px rgb(115, 127, 193); */
 }
 .small-cards:hover {
   background-color: rgb(87, 59, 128);
@@ -158,20 +156,34 @@ li {
   height: 27%;
   width: 44.8%;
 }
-/* promos END */
+#food {
+  background-image: url('https://images.unsplash.com/photo-1597922650364-dc88d9d18d71?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FmZSUyMGZvb2R8ZW58MHx8MHx3aGl0ZQ%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#clothing {
+  background-image: url('https://images.unsplash.com/photo-1613606760095-22f7872bb3a1?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fGNsb3RoaW5nfGVufDB8fDB8d2hpdGU%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#tech {
+  background-image: url('https://images.unsplash.com/photo-1538391543564-047a76156421?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHdoaXRl&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#entertainment {
+  background-image: url('https://images.unsplash.com/photo-1547130542-00f463cf8c0c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWV8ZW58MHx8MHx3aGl0ZQ%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* promos END                -------------------------------- */
 
-/* large screen viewport */
-/* @media only screen and (min-width: 1300px) {
-  .small-cards {
-    flex-grow: 1;
-    height: 290px;
-    width: 290px;
-    margin: 0 2% 0 2%;
-  }
-} */
-
+/* mobile responsive */
 @media only screen  and (max-width: 600px){
-
   .nav {
     height: 12vh;
   }

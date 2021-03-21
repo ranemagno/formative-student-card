@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<!-- Formative 1.2 - v4
-       Things to complete:
-           -images
-           -working nav?-->
+<!-- Formative 1.2 - v5 final -->
 
   <head>
     <meta charset="utf-8">
@@ -27,10 +24,12 @@
 
     <!-- container START -->
     <div class="container">
+
+      <!-- map START -->
       <div class="map-section">
         <iframe id="currentMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.367951781211!2d174.77757431600963!3d-41.27909577927435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afdacd02e46d%3A0x41a5eb0416607a6d!2sYoobee%20Colleges%20-%20Wellington%20Campus!5e0!3m2!1sen!2snz!4v1615330808235!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="select-campus-section">
 
+        <div class="select-campus-section">
           <div class="select-campus-btn" id="selectCampusBtn">
             <div>
               <h1 id="selectedCampus">Wellington</h1>
@@ -46,25 +45,25 @@
               <li id="wellington">Wellington</li>
             </ul>
           </div>
-
         </div>
         <!-- select campus section END -->
       </div>
-      <!-- map END -->
+      <!-- map END ------------------------------------------------------------->
+
       <!-- promo START -->
       <div class="promos">
         <div class="main-promo"></div>
-        <div class="small-cards"></div>
-        <div class="small-cards"></div>
-        <div class="small-cards"></div>
-        <div class="small-cards"></div>
+        <div class="small-cards" id="food"></div>
+        <div class="small-cards" id="clothing"></div>
+        <div class="small-cards" id="tech"></div>
+        <div class="small-cards" id="entertainment"></div>
       </div>
-      </div>
-      <!-- promo END -->
-    </div>
-    <!-- container END -->
+      <!-- promo END ----------------------------------------------------------->
 
-    <!-- do i even need this -->
+    </div>
+    <!-- container END --------------------------------------------------------->
+
+    <!-- change map script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
